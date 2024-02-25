@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS-120</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="#Home" >
+            <div id="UP">
+            </div> 
+        </a>
+        <a href="#TODO" >TODO</a>
+        <a href="#Labs" >Material/Labs</a>
+        <a href="#Old material" >Old material</a>
+        <a href="#END" >
+            <div id="Down">
+            </div> 
+        </a>
+        
+    </div>
+
+    <section id="Home"></section>
+    <div class="introductionDiv">
+        <a class="departmentURL" href="https://www.csd.uoc.gr/">
+            Πανεπιστήμιο Κρήτης <br> Τμήμα Επιστήμης Υπολογιστών
+        </a> 
+
+        <h1>ΗΥ-120: Ψηφιακή Σχεδίαση</h1>
+
+        <h3>Φθινόπωρο 2023</h3>
+
+        <h3>
+            <a class="links" href="https://users.ics.forth.gr/~kateveni/">
+                Μανόλης Κατεβαίνης
+            </a>
+
+            ,Νίκος Κρασσάς
+        </h3>
+
+        <h3>CS-120: Digital Design - Fall 2022 - M. Katevenis, N. Krassas - 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/copyright.html">
+                © copyright 
+            </a> 2023 University of Crete, Greece.
+        </h3>
+    </div>   
+    
+
+    <section id="TODO">
+        <div id="TODODIV">
+            <h2>
+                <span class="num">&num;</span>
+                 Τα πιό Πρόσφατα / Τρέχουσες Ενέργειες (TO_DO):
+            </h2>
+
+            <h3 class="paragraph">
+                <div class="middotdiv"><span class="middot">&middot;</span></div>
+                &nbsp;
+                <span class="RedHilight">Επαναληπτικό μάθημα:</span> Δευτέρα 8/1/2024, 17:00 - 19:00, 
+                στο Αμφιθέατρο Σ. Ορφανουδάκη –δηλ. μετά την εξέταση του ΗΥ-100 και 
+                με ένα μικρό διάλειμμα ενδιάμεσα (εάν υποθέσουμε ότι η εξέταση ΗΥ-100 είναι 
+                προγραμματισμένη για 1-4, αλλά θα καθυστερήσει και έως μισή ώρα να τελειώσει,
+                δηλ. 16:30, τότε αφήνουμε ένα διάλειμμα μισής ώρας και αρχίζουμε στις 5 ακριβώς 
+                –όχι 5 και τέταρτο). Οι διαφάνειες της επανάληψης είναι οι ίδιες 
+                όπως και το Φθ'20 (από το οποίο είναι και οι βιντεοσκοπήσεις):
+            </h3>
+
+            <h3 class="swiftright" >
+                1.
+                <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/epanal_1.pdf">
+                    Συνδυαστικά Κυκλώματα – Διαφάνειες Φθ'20 (pdf)
+                </a>
+                <br>
+
+                <span class="swiftright">
+                    &blacksquare;
+                    Βιντεοσκοπημένη επανάληψη Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_1A.mp4">
+                        Slides2-11 (mp4)
+                    </a>
+                    (decoder, Karnaugh) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_1B.mp4">
+                        Slides12-17 (mp4)
+                    </a>
+                    (πολυπλέκτες) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_1C.mp4">
+                        Slides18-29 (mp4)
+                    </a>
+                    (CMOS, tristate) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_1D.mp4">
+                        Slides30-38 (mp4)
+                    </a>
+                    (Άλγεβρα Boole, parity)
+                </span>
+
+            </h3>
+
+            <h3 class="swiftright" >
+                2.
+                <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/epanal_2.pdf">
+                    Αρίθμηση Ακεραίων, Προσθαφαιρέτες – Διαφάνειες Φθ'20 (pdf)
+                </a>
+                <br>
+
+                <span class="swiftright">
+                    &blacksquare;
+                    Βιντεοσκοπημένη επανάληψη Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_2A.mp4">
+                        Slides2-12 (mp4)
+                    </a>
+                    (unsigned bin/hex) – 
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_2B.mp4">
+                        Slides13-18 (mp4) 
+                    </a>
+                    (προσημασμένοι) – 
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_2C.mp4">
+                        Slides19-23 (mp4)
+                    </a>
+                    (αθροιστής) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_2D.mp4">
+                        Slides24-31 (mp4) 
+                    </a>
+                    (προσθαφαίρεση προσημασμ.)
+
+                </span>
+
+            </h3>
+
+            <h3 class="swiftright" >
+                3.
+                <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/epanal_3.pdf">
+                    Ακολουθιακά Κυκλώματα, Μνήμες, απλός Υπολογιστής – Διαφάνειες Φθ'20 (pdf)
+                </a>
+                <br>
+
+                <span class="swiftright">
+                    &blacksquare;
+                    Βιντεοσκοπημένη επανάληψη Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_3A.mp4">
+                        Slides2-10 (mp4)
+                    </a>
+                    (flip-flop, καταχ.) – 
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_3B.mp4">
+                        Slides11-14 (mp4) 
+                    </a>
+                    (βασική SRAM) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_3C.mp4">
+                        Slides15-18 (mp4) 
+                    </a>
+                    (μεγέθη μνημών) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_3D.mp4">
+                        Slides19-27 (mp4) 
+                    </a>
+                    (FSM) –
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_3E.mp4">
+                        Slides28-43 (mp4) 
+                    </a>
+                    (απλός υπολογ.) – 
+
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/epanal_3F.mp4">
+                        Slides44-48 (mp4) 
+                    </a>
+                    (καθυστέρηση, κατανάλωση)
+
+                </span>
+
+            </h3>
+           
+        </div>
+
+        <h3 class="paragraph">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &nbsp;
+            <span class="darkhilight">Τελική Εξέταση Α' Περιόδου:</span> 
+            Παρασκευή, 12 Ιανουαρίου 2024, ώρα 09:30 - 12:30 – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/finalA.html">
+                Κανονισμός, Ύλη
+            </a>
+        </h3>
+    </section>
+
+    <section id="Labs">
+        <h2>Ύλη Μαθήματος:</h2>
+        <h2>Φετινό Υλικό (Fall 2023):</h2>
+        
+        <h3 class="swiftright paragraph">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace; Εργαστήριο <span class="RedHilight">→ →</span>
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/lab/">
+                www.csd.uoc.gr/~hy120/lab/ 
+            </a>
+            <span class="RedHilight">← ←</span>
+            κανονισμός, ημέρες/ώρες/τμήματα, κρατήσεις θέσεων, βαθμολογία, κλπ.
+        </h3>
+
+        <h3 class="swiftright paragraph">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/intro.html">
+                Περιγραφή του Μαθήματος
+            </a>
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/intro.html">
+                PDF
+            </a>
+            ] – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/00a_intro.pdf">
+                Εισαγωγικές Διαφάνειες Περιγραφής του μαθήματος (pdf)
+            </a>
+        </h3>
+
+        <h3 class="swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace; <span class="hilight">Ένα Καλωσόρισμα: </span>
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/00b_welcome.pdf">
+                Διαφάνειες 00b Φθ'23 (pdf)
+            </a>  –
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00b_welcome.mp4">
+                Διάλεξη Φθ'20 (mp4)
+            </a>  –
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/19f/welcome.html">
+                Κείμενο του Φθ'19 (html) 
+            </a>
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/19f/welcome.pdf">
+                PDF
+            </a>
+            ]
+        </h3>
+
+        
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab00_switches.html">
+                Εργαστήριο 0 
+            </a>
+            (27-29 Σεπ. 2023 – βδ.1)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab00_switches.pdf">
+                PDF
+            </a>
+            ]: Επανάληψη περί Ηλεκτρικών Κυκλωμάτων, γνωριμία με <span class="hilight">breadboard, LED, διακόπτες, Λογικές Πράξεις NOT, AND, OR.</span>
+        
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/00c_and_or.pdf">
+                        Διαφάνειες 00c Φθ'20 (pdf)
+                    </a>
+                    : Ψηφιακά Δυαδικά και οι πράξεις λογικό-ΚΑΙ, λογικό-Ή (§0.10, 0.11)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένη διάλεξη 00c Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00c_and_or.mp4">
+                        Slides 1-9 (mp4)
+                    </a>
+                    
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/00d_switches.pdf">
+                        Διαφάνειες 00d Φθ'20 (pdf)
+                    </a>
+                    : Ηλεκτρικά κυκλώματα, Διακόπτες, ΚΑΙ, Ή, ΟΧΙ (§0.1-0.3, 0.8-0.11)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00d_switches_A.mp4">
+                        Slides2-3 (mp4)
+                    </a>– 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00d_switches_B.mp4">
+                        Slides2-7 (mp4)
+                    </a>
+                    (ηλεκτρισμός, AND) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00d_switches_C.mp4">
+                        Slides8-11 (mp4)
+                    </a>
+                    (OR, NOT).
+                </div>
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/22f/00e_lab_instr.pdf">
+                        Διαφάνειες 00e Φθ'22 (pdf)
+                    </a>
+                    – Πώς δουλεύουμε στο Εργαστήριο (§0.4-0.7):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00e_lab_instr_B.mp4">
+                        Slides2-12 (mp4)
+                    </a>
+                    (breadboard) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/00e_lab_instr_C.mp4">
+                        Slides13-17 (mp4)
+                    </a>
+                    (LED, AND, OR ckts)
+                </div>
+            </h3>
+
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab01_swLogic.html">
+                Εργαστήριο 1
+            </a>
+            (2-6 Οκτ. 2023 – βδ.2)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab01_swLogic.pdf">
+                PDF
+            </a>
+            ]: Σύνθετες Λογικές Συναρτήσεις, <span class="hilight">Πίνακες Αληθείας, XOR/parity, MUX'es, ROM.</span>
+        
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/01a_comp_f.pdf">
+                        Διαφάνειες 01a Φθ'23 (pdf)
+                    </a>
+                    : Πίνακες Αληθείας, Σύνθετες Συναρτήσεις, XOR, Ισοτιμία (§1.1-1.4)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις 01a Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01a_comp_f_A.mp4">
+                        Slides2-6 (mp4) 
+                    </a>
+                    (εισαγωγή) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01a_comp_f_B.mp4">
+                        Slides7-8 (mp4)
+                    </a>
+                    (πιν. αληθείας) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01a_comp_f_C.mp4">
+                        Slides12-15 (mp4)
+                    </a>
+                    (xor, xnor) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01a_comp_f_D.mp4">
+                        Slides15-18 (mp4)
+                    </a>
+                    (parity, ανιχν. σφ.).
+                </div>
+                <br>
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/01b_mux_mem.pdf">
+                        Διαφάνειες 01b Φθ'20 (pdf)
+                    </a>
+                    : Πολυπλέκτες, εφαρμογή σε Δίκτυα, Μνήμες - η βασική ιδέα (§1.5-1.9)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις 01b Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01b_mux_mem_A.mp4">
+                        Slides2-8 (mp4)
+                    </a>(mux, τηλ.κέντρο) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01b_mux_mem_B.mp4">
+                        Slides9-12 (mp4) 
+                    </a>
+                    (TDM, and-or) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01b_mux_mem_C.mp4">
+                        Slides12-13 (mp4)
+                    </a>
+                    (μνήμη εργαστ) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01b_mux_mem_D.mp4">
+                        Slides14-20 (mp4)
+                    </a>
+                    (Μνήμη: οργάν., muxes)
+
+                    <div class=" swiftright">
+                        <span>&FilledVerySmallSquare;</span>
+                        Επιπλέον, εκτός-ύλης, προαιρετικό υλικό –μόνο γιά τους ενδιαφερόμενους:
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra01_codes.html">
+                            Extra 1
+                        </a>
+                        : parity: switch network, function properties; Gray code; error detection and correction codes - checksum, CRC; oscilloscopes -
+                        [
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra01_codes.pdf">
+                            PDF
+                        </a>
+                        ]
+                    </div>
+                </div>
+            </h3>
+
+            <br>
+
+            
+
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab02_relays.html">
+                Εργαστήριο 2 
+            </a>
+            (9-13 Οκτ. 2023 – βδ.3) 
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab02_relays.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight">Αποκωδικοποιητές</span>
+            και Διευθύνσεις Μνήμης, 
+            <span class="hilight">Ηλεκτρονόμοι</span>
+            , Κωδικοποίηση και 
+            <span class="hilight">Συνδυασμοί</span>
+        
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/02a_de_code.pdf">
+                        Διαφάνειες 02a Φθ'20 (pdf)
+                    </a>
+                    : Δένδρα, Διευθύνσεις, Αποκωδικοποιητές, Κώδικες, Συνδυασμοί (§2.1-2.8)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02a_de_code_A.mp4">
+                        Slides2-5 (mp4)
+                    </a>
+                    (Δένδρο, Αποκ.Δ.) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02a_de_code_B.mp4">
+                        Slides6-9 (mp4)
+                    </a>
+                    (συναρτ. αποκωδ.) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02a_de_code_C.mp4">
+                        Slide10 (mp4)
+                    </a>
+                    (προσυμφ. κώδικες) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02a_de_code_D.mp4">
+                        Slides10-13 (mp4)
+                    </a>
+                    (διαφ. κώδικες) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02a_de_code_E.mp4">
+                        Slides12-15 (mp4)
+                    </a>
+                    (πλήθος συνδ.)
+                </div>
+                <br>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/21f/02b_relays.pdf">
+                        Διαφάνειες 02b Φθ'21 (pdf)
+                    </a>
+                    : Ηλεκτρονόμοι, Αναλογικά-Ψηφιακά (§2.9-2.14)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02b_relays_A.mp4">
+                        Slides2-5 (mp4)
+                    </a>(relays)– 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02b_relays_B.mp4">
+                        Slides6-10 (mp4)
+                    </a>
+                    (relay decoder) – (αναλογικά-ψηφιακά δεν είχαμε προλάβει το Φθ'20)
+
+                </div>
+                
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab03_combIC.html">
+                Εργαστήριο 3 
+            </a>
+            (16-20 Οκτ. 2023 – βδ.4)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab03_combIC.pdf">
+                PDF
+            </a>
+            ]: Η σχέση Πολυπλεκτών - Αποκωδικοποιητών, 
+            <span class="hilight">Ανάδραση - Ταλαντωτές - Στοιχεία Μνήμης, Λογικές Πύλες, Transistors και Chips</span>
+            , Συνδυαστικά Κυκλώματα
+            <span class="RedHilight">→ Θυμηθείτε την παραλαβή των Chips σας πριν το Εργ.3, και την επιστροφή τους με το τέλος των εργαστηρίων</span>
+            (
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/21f/lab03_combIC.html#lab_chips">
+                §3.7
+            </a>
+            )
+
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/03a_fdbck_gates.pdf">
+                        Διαφάνειες 03a Φθ'20 (pdf)
+                    </a>
+                    : Αμφίδρομη-Μονόδρομη Ροή, Ανάδραση-Μνήμη, Λογικές Πύλες (§3.1-3.5)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03a_fdbck_gates_A.mp4">
+                        Slides2-3 (mp4)
+                    </a>
+                    (tree mux) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03a_fdbck_gates_B.mp4">
+                        Slides5-6 (mp4)
+                    </a>
+                    (feedback) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03a_fdbck_gates_C.mp4">
+                        Slides7-12(α) (mp4)
+                    </a>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03a_fdbck_gates_E.mp4">
+                        Slides8-14(β) (mp4)
+                    </a>
+                    (ασταθές, διασταθές/μνήμη) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03a_fdbck_gates_D.mp4">
+                        Slides15-18 (mp4)
+                    </a>
+                    (πύλες)
+                </div>
+                <br>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/21f/03b_cmos_chips.pdf">
+                        Διαφάνειες 03b Φθ'21 (pdf)
+                    </a>
+                    : Transistors και Πύλες CMOS, Chips Εργαστηρίου (§3.6-3.10)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03b_cmos_chips_A.mp4">
+                        Slide2 (mp4)
+                    </a>(εισαγωγή MOS)– 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03b_cmos_chips_B.mp4">
+                        Slides2-8 (mp4) 
+                    </a>
+                    (CMOS tech) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03b_cmos_chips_C.mp4">
+                        Slides8-10 (mp4)
+                    </a>
+                    (inverter) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03b_cmos_chips_D.mp4">
+                        Slides11-15 (mp4)
+                    </a>
+                    (NAND, NOR) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03b_cmos_chips_E.mp4">
+                        Slides16-20 (mp4)
+                    </a>
+                    (προσοχή) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03b_cmos_chips_F.mp4">
+                        Slides20-21 (mp4)
+                    </a>
+                    (συνθ. από Πιν.Αλ.)
+
+                    <div class=" swiftright">
+                        <span>&FilledVerySmallSquare;</span>
+                        Επιπλέον, εκτός-ύλης, προαιρετικό υλικό –γιά τους ενδιαφερόμενους:
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/12f/extra03_relayLogic.html">
+                            Συνδυαστικά Κυκλώματα με χρήση Ηλεκτρονόμων 
+                        </a>   
+                        [
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/12f/extra03_relayLogic.pdf">
+                            PDF
+                        </a>
+                        ]
+                    </div>
+
+                    <div class=" swiftright">
+                        <span>&FilledVerySmallSquare;</span>
+                        Επιπλέον, εκτός-ύλης, προαιρετικό υλικό –μόνο γιά τους ενδιαφερόμενους:   
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra02_feedback.html">
+                            Extra 2
+                        </a>
+                        : pulse generator, and use with the oscilloscope; delay measurements in RC circuits, simple gates, relays; frequency measurements in ring oscillators; bistable (latch) circuits and FCFS arbiters; feedback control theory - 
+                        [
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra02_feedback.pdf">
+                            PDF
+                        </a>
+                        ]
+                    </div>
+
+                    <div class=" swiftright">
+                        <span>&FilledVerySmallSquare;</span>
+                        Επιπλέον, εκτός-ύλης, προαιρετικό υλικό –μόνο γιά τους ενδιαφερόμενους: 
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra03_osc.pdf">
+                            Extra 3
+                        </a>   
+                        [
+                        <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra03_osc.pdf">
+                            PDF
+                        </a>
+                        ]- συνεισφορά Ε. Α. Νεονάκη: ταλαντωτές (oscillators)
+                    </div>
+                </div>
+            </h3>
+        </h3>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab04_karn_ram.html">
+                Εργαστήριο 4 
+            </a>
+            (23-27 Οκτ. 2023 – βδ.5) 
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab04_karn_ram.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight">Χάρτες Karnaugh, Άλγερβα Boole, Μνήμη RAM</span>
+            
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/04a_karnBool.pdf">
+                        Διαφάνειες 04a Φθ'20 (pdf)
+                    </a>
+                    : Διαγράμματα Venn - Χάρτες Karnaugh, Άλγεβρα Boole (§4.1-4.8)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04a_karnBool_A.mp4">
+                        Slides2-7 (mp4)
+                    </a>
+                    (2-var Karn.) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04a_karnBool_B.mp4">
+                        Slide8 (α) (mp4) 
+                    </a>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04a_karnBool_C.mp4">
+                        Slides8-12 (β) (mp4)
+                    </a>
+                    (3-var Karn.) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04a_karnBool_D.mp4">
+                        Slides13-15 (mp4)
+                    </a>
+                    (4-var Karn.) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04a_karnBool_E.mp4">
+                        Slides16-17 (mp4)
+                    </a>
+                    (don't care) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04a_karnBool_F.mp4">
+                        Slides18-22 (mp4)
+                    </a>
+                    (Άλγεβρα Boole)
+                </div>
+                <br>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/21f/04b_muxMem.pdf">
+                        Διαφάνειες 04b Φθ'21 (pdf)
+                    </a>
+                    : Πολυπλέκτες & Αποκωδικοποιητές με Πύλες και μέσα στις Μνήμες (§4.9-4.13)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04b_muxMem_A.mp4">
+                        Slides2-5 (mp4) 
+                    </a>(πολυπλέκτες) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/04b_muxMem_B.mp4">
+                        Slides6-10 (mp4) 
+                    </a>
+                    (debugging, μνήμη)
+
+                </div>
+                
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab05_add.html">
+                Εργαστήριο 5
+            </a>
+            (30 Οκτ. - 3 Νοε. 2023 – βδ.6)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab05_add.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight">Δυαδική Αρίθμηση, Αθροιστές</span>
+            
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/05a_bin_num.pdf">
+                        Διαφάνειες 05a Φθ'20 (pdf)
+                    </a>
+                    : Δυαδική Αρίθμηση, Οκταδικό, Δεκαεξαδικό (§5.1-5.2):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/05a_bin_num_A.mp4">
+                        Slides2-6 (mp4)
+                    </a>
+                    (ορισμός) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/05a_bin_num_B.mp4">
+                        Slides7-12 (mp4)
+                    </a>
+                    (εύρεση) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/05a_bin_num_C.mp4">
+                        Slides13-14 (mp4)
+                    </a>
+                    (octal-hexadecimal)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/05b_adders.pdf">
+                        Διαφάνειες 05b Φθ'20 (pdf)
+                    </a>
+                    : Αλγόριθμος Πρόσθεσης, Κρατούμενα, Δυαδικοί Αθροιστές (§5.3-5.11):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/05b_adders_A.mp4">
+                        Slides2-4 (mp4)
+                    </a>
+                    (αλγόριθμος) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/05b_adders_B.mp4">
+                        Slides5-10 (mp4)
+                    </a>
+                    (ταχύτητα) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/05b_adders_C.mp4">
+                        Slides11-12 (mp4)
+                    </a>
+                    (δένδρο αθροιστών)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Φύλλο εργασίας
+                    [
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/12f/lab05_workSheet.pdf">
+                        PDF
+                    </a>
+                    ]
+                    που μπορείτε να χρησιμοποιήσετε γιά το πείραμα 5.11 εάν σας βοηθά (συνεισφορά Ε. Νεονάκη, 2012).
+                </div>
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab06_sub.html">
+                Εργαστήριο 6 
+            </a>
+            (6 - 10 Νοε. 2023 – βδ.7) 
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab06_sub.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight">Προσημασμένοι Ακέραιοι, Προσθαφαιρέτες, FF.</span>
+            
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/06a_m_d_wrap.pdf">
+                        Διαφάνειες 06a Φθ'23 (pdf)
+                    </a>
+                    : Πολλαπλασιασμός-Διαίρεση-Υπόλοιπο με δύναμη του 2, Συστροφή (§6.1-6.2):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06a_m_d_wrap_A.mp4">
+                        Slides2-9 (mp4)
+                    </a>
+                    (πολλαπλασιασμός-διαίρεση-υπόλοιπο) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06a_m_d_wrap_B.mp4">
+                        Slides10-13 (mp4) 
+                    </a>
+                    (συστροφή)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/06b_signed.pdf">
+                        Διαφάνειες 06b Φθ'23 (pdf)
+                    </a>
+                    : Προσημασμένοι και η Πρόσθεσή τους (§6.3-6.10):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_A.mp4">
+                        Slides2-4 (mp4)
+                    </a>(ιδέα, όρια) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_B.mp4">
+                        Slides5-6 (mp4) 
+                    </a>
+                    (μετατροπές) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_E.mp4">
+                        Slides7-8 (mp4) 
+                    </a>
+                    (2η μέθοδος, πχ.) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_C.mp4">
+                        Slide9 (mp4) 
+                    </a>
+                    (signed addition) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_D.mp4">
+                        Slides10-13 (mp4)
+                    </a>
+                    (απόδειξη) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_F.mp4">
+                        Slide14 (mp4)
+                    </a>
+                    (παραδείγματα) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/06b_signed_G.mp4">
+                        Slides15-21 (mp4) 
+                    </a>
+                    (αντίθετος, add/sub)
+
+                </div>
+                
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <span class="hilight">Εξέταση Προόδου - </span>
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/midterm.html">
+                Κανονισμός, Ύλη
+            </a>
+            : <span class="hilight"> Σάββατο 4 Νοεμβρίου 2023, ώρα 11:00 - 13:00 </span>
+            (τέλος βδομάδας 6). Η συμμετοχή των φοιτητών είναι υποχρεωτική κατά την έννοια ότι ο βαθμός της εξέτασης αυτής, οιοσδήποτε και αν είναι αυτός, πάντα μετράει ως το 20% του βαθμού του μαθήματος, οιασδήποτε περιόδου. Ωστόσο, <span class="hilight">δεν</span> υπάρχει κάτω όριο βαθμολογίας γιά αυτή την εξέταση από μόνη της που να αποτελεί προϋπόθεση γιά επιτυχία στο μάθημα.
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab07_ff.html">
+                Εργαστήριο 7
+            </a>
+            (13-18 Νοε. 2023 – βδ.8)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab07_ff.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight">Μανταλωτές, Καταχωρητές, Διφασικά Ρολόγια.</span>
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/07a_latches.pdf">
+                        Διαφάνειες 07a Φθ'20 (pdf)
+                    </a>
+                    : Μανταλωτές (Latches) τύπων RS και D, Διαγράμματα Χρονισμού (§7.1-7.4):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/07a_latches_A.mp4">
+                        Slides2-7 (mp4) 
+                    </a>
+                    (μανταλωτής RS) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/07a_latches_B.mp4">
+                        Slides8-10 (mp4)
+                    </a>
+                    (μαντ. D, διαγρ. χρον.)
+                    
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/07b_reuse.pdf">
+                        Διαφάνειες 07b Φθ'20 (pdf)
+                    </a>
+                    : Καταχωρητές, Επαναχρησιμοποίηση Πόρων, Σήματα Χρονισμού (§7.5-7.8):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/07b_reuse_A.mp4">
+                        Slides2-6 (mp4) 
+                    </a>(αθρ. ζευγών) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/07b_reuse_B.mp4">
+                        Slides7-14 (mp4) 
+                    </a>
+                    (διφασικά ρολόγια)
+
+                </div>
+                
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab08_edge.html">
+                Εργαστήριο 8
+            </a>
+            (20-24 Νοε. 2023 – βδ.9)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab08_edge.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight"> Μετρητής</span>
+            με Αθροιστή & Καταχωρητή, 
+            <span class="hilight"> Ακμοπυροδότηση</span>
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/08a_cnt_edge.pdf">
+                        Διαφάνειες 08a Φθ'20 (pdf)
+                    </a>
+                    : Μετρητής μέσω Αθροιστή & Καταχωρητή, Ακμοπυροδότηση:
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/08a_cnt_edge_A.mp4">
+                        Slides2-4 (mp4)
+                    </a>
+                    (mux, μετρητής) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/08a_cnt_edge_B.mp4">
+                        Slide5 (mp4) 
+                    </a>
+                    (ακμοπυροδότητο flip-flop)
+                    
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Επιπλέον, εκτός-ύλης, προαιρετικό υλικό –μόνο γιά τους ενδιαφερόμενους: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/10f/extra08_DtoA_cnt.pdf">
+                        Extra 8 [PDF]
+                    </a>
+                    - συνεισφορά Ε. Α. Νεονάκη: μετατροπείς ψηφιακού σε αναλογικό, μετρητές χρόνου και συχνότητας - 
+                    [
+                    <a class="links" href="https://users.ics.forth.gr/~kateveni/120/10f/extra08_DtoA_cnt.pdf">
+                        2ο αντίτυπο
+                    </a>
+                    ]
+                </div>
+
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab09_3st.html">
+                Εργαστήριο 9
+            </a>
+            (27 Νοε. - 1 Δεκ. 2023 – βδ.10) 
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab09_3st.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight">  Λεωφόροι, Τρικατάστατοι, SRAM</span>
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/09a_tristate.pdf">
+                        Διαφάνειες 09a Φθ'20 (pdf)
+                    </a>
+                    :  Πολύπλεξη μέσω Τρικατάστατων Οδηγητών, Λεωφόροι (Buses) (§9.1-9.2):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09a_tristate_A.mp4">
+                        Slides2-4 (mp4)
+                    </a>
+                    (κύκλωμα) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09a_tristate_B.mp4">
+                        Slides5-8 (mp4) 
+                    </a>
+                    (multi-bit bus) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09a_tristate_C.mp4">
+                        Slides(6)9-12 (mp4) 
+                    </a>
+                    (διαιτησία, επικοιν. κοινόχρ. μέσων)
+                    
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/09b_ram.pdf">
+                        Διαφάνειες 09b Φθ'20 (pdf)
+                    </a>
+                    : Μνήμη Τυχαίας Προσπέλασης (Random Access Memory - RAM) (§9.3-9.8):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09b_ram_A.mp4">
+                        Slides2-8 (mp4)
+                    </a>
+                    (βασικά αναγν/εγγρ) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09b_ram_B.mp4">
+                        Slide9 (mp4) 
+                    </a>
+                    (εσωτ. δομή RAM chip) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09b_ram_C.mp4">
+                        Slide10 (mp4) 
+                    </a>
+                    (multichip) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/09b_ram_D.mp4">
+                        Slides11-12 (mp4)
+                    </a>
+                    (chip i/f, connections)
+                </div>
+
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab10_fsm.html">
+                Εργαστήριο 10
+            </a>
+            (4-8 Δεκ. 2023 – βδ.11)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab10_fsm.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight"> Μηχανές Πεπερασμένων Καταστάσεων (FSM)</span>
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/10a_fsm.pdf">
+                        Διαφάνειες 10a Φθ'20 (pdf)
+                    </a>
+                    : Μηχανές Πεπερασμένων Καταστάσεων (Finite State Machines - FSM) (§10.1-10.2):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10a_fsm.mp4">
+                        Slides2-4 (mp4)
+                    </a>
+                    (κύκλωμα, διάγρ. καταστ.)
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/10b_rsrc_mgt.pdf">
+                        Διαφάνειες 10b Φθ'20 (pdf)
+                    </a>
+                    : Παράδειγμα 1: Διαχείριση Πόρων - προτεραιότητες, κυκλική εναλλαγή (§10.3-10.4):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_A.mp4">
+                        Slides2-9 (mp4)
+                    </a>
+                    (τυφλός, 1:1) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_B.mp4">
+                        Slides10-12 (mp4)
+                    </a>
+                    (τυφλός, 2:1) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_C.mp4">
+                        Slides13-16 (α) (mp4)
+                    </a>
+                    
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_D.mp4">
+                        Slides13-16 (β) (mp4) 
+                    </a>
+                    (χωρίς μνήμη) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_E.mp4">
+                        Slide18 (α) (mp4)
+                    </a>
+                    
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_F.mp4">
+                        Slides17-21 (β) (mp4)
+                    </a>
+                    (round-robin) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10b_rsrc_mgt_G.mp4">
+                        Slides22-25 (mp4)
+                    </a>
+                    (WRR, 2:1)
+                </div>
+                <br>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/22f/10c_huffman.pdf">
+                        Διαφάνειες 10c Φθ'22 (pdf)
+                    </a>
+                    : Παράδειγμα 2: Κώδικες Μεταβλητού Μήκους (Huffman) (§10.5-10.8):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10c_huffman_A.mp4">
+                        Slides3-7 (mp4)
+                    </a>
+                    (κώδικας, FSM) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/10c_huffman_B.mp4">
+                        Slides8-9 (mp4) 
+                    </a>
+                    (one-hot)
+                </div>
+
+            </h3>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab11_dpath.html">
+                Εργαστήριο 11
+            </a>
+            (11-15 Δεκ. 2023 – βδ.12)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab11_dpath.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight"> Ένας απλός Υπολογιστής: datapath και εντολές πράξεων</span>
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/11a_dpath.pdf">
+                        Διαφάνειες 11a Φθ'23 (pdf)
+                    </a>
+                    : Ένας απλός Υπολογιστής: Datapath & Εντολές Πράξεων
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/11a_dpath_A.mp4">
+                        Slides2-7 (mp4) 
+                    </a>
+                    (ALU) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/11a_dpath_B.mp4">
+                        Slides8-10 (mp4)
+                    </a>
+                    (ACC: κύκλωμα) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/11a_dpath_C.mp4">
+                        Slides10-13 (mp4)
+                    </a>
+                    (αρ. υπολογισμοί) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/11a_dpath_D.mp4">
+                        Slides14-18 (mp4) 
+                    </a>
+                    (εντολές, jump) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/11a_dpath_E.mp4">
+                        Slides19-22 (mp4)
+                    </a>
+                    (inp, κυκλ. ελέγχου)
+                </div>
+                <br>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Ένας προσομοιωτής του datapath του απλού υπολογιστή του εργαστηρίου (όχι του CircuitVerse), ευγενής συνεισφορά του κ. Εμμανουήλ Α. Νεονάκη, βασισμένος στο σύστημα
+                    <a class="links" href="https://tams-www.informatik.uni-hamburg.de/applets/hades/html/hades.html">
+                        Hamburg Design System (HADES)
+                    </a>
+                    , βρίσκεται στο directory <span class="hilight">~hy120/dpath_hades_EAN11/</span> (δηλαδή: /home/misc/courses/hy120/dpath_hades_EAN11/ ) των υπολογιστών του Τμήματος (μπορείτε να κατεβάσετε όλα τα περιεχόμενα αυτού του directory αντιγράφοντας και αποσυμπιέζοντας το αρχείο: ~hy120/dpath_hades_EAN11.zip ). Το πρόγραμμα Java που πρέπει να ανοίξετε και εκτελέσετε είναι το hades.jar και στη συνέχεια από το μενού του hades: File/Open επιλέξτε το αρχείο DataPath.hds
+                </div>
+            </h3>
+        </h3>
+
+        <br>
+        <br>
+
+        <h3 class="paragraph swiftright">
+            <div class="middotdiv"><span class="middot">&middot;</span></div>
+            &ThickSpace;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab12_br_ptr.html">
+                Εργαστήριο 12
+            </a>
+            (18-21 Δεκ. 2023 – βδ.13)
+            [
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/lab12_br_ptr.pdf">
+                PDF
+            </a>
+            ]: <span class="hilight"> Διακλαδώσεις, pointers, ταχύτητα & κατανάλωση πυλών</span>
+        
+            <h3 class="paragraph swiftright">
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/21f/12a_br_ptr.pdf">
+                        Διαφάνειες 12a Φθ'21 (pdf)
+                    </a>
+                    : Διακλαδώσεις και Έμμεσες Προσπελάσεις (Pointers):
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20:
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12a_br_ptr_A.mp4">
+                        Slides2-3 (mp4)
+                    </a>
+                    (βρόχος με bne) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12a_br_ptr_B.mp4">
+                        Slides4-5 (mp4) 
+                    </a>
+                    (εντολές διακλ.) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12a_br_ptr_C.mp4">
+                        Slides5-10 (mp4)
+                    </a>
+                    (διακλ., jmpx) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12a_br_ptr_D.mp4">
+                        Slides11-13 (mp4) 
+                    </a>
+                    (δομές δεδομ.) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12a_br_ptr_E.mp4">
+                        Slides11-18 (mp4)
+                    </a>
+                    (ldx,addx,stx) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12a_br_ptr_F.mp4">
+                        Slide19 (mp4)
+                    </a>
+                    (πιν. αληθ. ελέγχου)
+                </div>
+                <br>
+ 
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/12b_speed_energy.pdf">
+                        Διαφάνειες 12b Φθ'20 (pdf)
+                    </a>
+                    : Ταχύτητα και Κατανάλωση Ενέργειας των Κυκλωμάτων CMOS:
+                </div>
+
+                <div class="middotdiv swiftright">
+                    <span>&bull;</span>
+                    Βιντεοσκοπημένες διαλέξεις Φθ'20: 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12b_speed_energy_A.mp4">
+                        Slides2-4 (mp4) 
+                    </a>
+                    (t=Q/I, fan-out) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12b_speed_energy_B.mp4">
+                        Slides5-13 (mp4)
+                    </a>
+                    (fan-in, W/L) – 
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12b_speed_energy_C.mp4">
+                        Slides14-16 (mp4)
+                    </a>
+                    (μνήμες) –
+                    <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12b_speed_energy_D.mp4">
+                        Slides17-21 (mp4) 
+                    </a>
+                    (καταναλ. ενέργ.)
+                </div>
+            </h3>
+        </h3>
+
+    </section>
+
+    <section id="Old material">
+        <h3 class="RedHilight">→ Το υπόλοιπο αυτής της ιστοσελίδας είναι από το περυσινό και παλαιότερα εξάμηνα ←</h3>
+        <h2>Διδασκαλία με τον Προσομοιωτή CircuitVerse (Φθ'20, λόγω covid-19):</h2>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <span class="hilight">Προσομοιωτής</span>
+            γιά τις Ασκήσεις Φθ'20, διαδικτυακά: 
+            <a class="links" href="https://circuitverse.org/">
+                circuitverse.org
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/01c_ex01_cktv.pdf">
+                Ο Προσομοιωτής και Ασκήσεις 1 (pdf)
+            </a>
+            – βιντεοσκοπημένες διαλέξεις Φθ'20: 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01c_ex01_cktv_A.mp4">
+                Slides2-6 (mp4)
+            </a>
+            (εισαγωγικά, ασκ. 0.10-0.11) –
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01c_ex01_cktv_B.mp4">
+                Interactive demo (mp4)
+            </a>
+            – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01c_ex01_cktv_C.mp4">
+                Slides7-9 (mp4)
+            </a>
+            (ασκ. 1.3-1.4) – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/01c_ex01_cktv_D.mp4">
+                Slides10-14 (mp4) 
+            </a>
+            (ασκ. 1.4b-1.9)
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/02c_ex02_cktv.pdf">
+                Ασκήσεις 2 Προσομοιωτή (pdf) 
+            </a>
+            – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/02c_ex02_cktv.mp4">
+                Παρουσίαση (mp4)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/03c_ex03_cktv.pdf">
+                Ασκήσεις 3 Προσομοιωτή (pdf)
+            </a>
+            – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/03c_ex03_cktv.mp4">
+                Παρουσίαση (mp4)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/04c_ex04_cktv.pdf">
+                Ασκήσεις 4 Προσομοιωτή (pdf)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/05c_ex05_cktv.pdf">
+                Ασκήσεις 5 Προσομοιωτή (pdf)
+            </a>
+        </h3>
+        
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/06c_ex06_cktv.pdf">
+                Ασκήσεις 6 Προσομοιωτή (pdf)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="hhttps://www.csd.uoc.gr/~hy120/20f/07c_ex07_cktv.pdf">
+                Ασκήσεις 7 Προσομοιωτή (pdf)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/08b_ex08_cktv.pdf">
+                Ασκήσεις 8 Προσομοιωτή (pdf)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/09c_ex09_cktv.pdf">
+                Ασκήσεις 9 Προσομοιωτή (pdf)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <span class="hilight">Ασκήσεις 10 Προσομοιωτή:</span>
+            Άσκηση 10.4: κάντε "στο χαρτί" όλα όσα σας ζητά η εκφώνηση και παραδώστε τα στην αναφορά σας, και επιπλέον σχεδιάστε το κύκλωμα που προκύπτει στο CircuitVerse, χρησιμοποιώντας DflipFlop's και πύλες NOT, AND, OR (οσωνδήποτε εισόδων), και μάθετε και ελέγξτε τη λειτουργία του με όλων των ειδών τις εισόδους που αντιστοιχούν στις διάφορες συνθήκες κίνησης αυτοκινήτων. Άσκηση 10.8: κάντε όσα ζητά το Πείραμα 10.8 στο CircuitVerse, χρησιμοποιώντας DflipFlop's και πύλες NOT, AND, OR (οσωνδήποτε εισόδων), και χωρίς να παραλείψετε τον όρο (reset') από τα nS1 και nS2 που θα το κάνατε γιά απλοποίηση στο εργαστήριο. Γιά την παρακολούθηση των εξόδων A, B, C, D, της FSM αρκούν LED's, μιάς και στο CircuitVerse μπορείτε να έχετε όσες τέτοιες θέλετε. Μάθετε και ελέγξτε τη λειτουργία της FSM με πλήθος μηνυμάτων, τόσο αυτών που δίνει η εκφώνηση όσο και άλλων δικών σας.
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/11c_ex11_cktv.pdf">
+                Ασκήσεις 11 Προσομοιωτή (pdf)
+            </a>
+            (εκφώνηση Άσκησης 11, που αντικαθιστά φέτος το Εργ.11) –
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/11c_ex11_cktv.mp4">
+                Φροντιστήριο (mp4)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20f/12c_ex12_cktv.pdf">
+                Ασκήσεις 12 Προσομοιωτή (pdf)
+            </a>
+            (εκφώνηση Άσκησης 12, που αντικαθιστά φέτος το Εργ.12) – 
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/20v/12c_ex12_cktv.mp4">
+                Φροντιστήριο (mp4)
+            </a>
+        </h3>
+        <br>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/19f/finalB_Qs.pdf">
+                Θέματα Εξέτασης Β' Περιόδου Φθ'19
+            </a>
+            (Σεπτέμβριος 2020) – Εξέταση και εξ αποστάσεως λόγω covid-19.
+        </h3>
+        <br>
+
+        <h2>Σελίδες Παλαιοτέρων Ετών (Previous Years):</h2>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index22f.html">
+                Φθινόπωρο 2022 (Fall 2022)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index21f.html">
+                Φθινόπωρο 2021 (Fall 2021)
+            </a>
+            (full set of F'20 slides, updated, adapted back for the Lab)
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index20f.html">
+                Φθινόπωρο 2020 (Fall 2020)
+            </a>
+            (new slides, CircuitVerse Simulator, video-recordings)
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index19f.html">
+                Φθινόπωρο 2019 (Fall 2019)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index18f.html">
+                Φθινόπωρο 2018 (Fall 2018)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index17f.html">
+                Φθινόπωρο 2017 (Fall 2017)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index16f.html">
+                Φθινόπωρο 2016 (Fall 2016)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index15f.html">
+                Φθινόπωρο 2015 (Fall 2015)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index14f.html">
+                Φθινόπωρο 2014 (Fall 2014)
+            </a>
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index13f.html">
+                Φθινόπωρο 2013 (Fall 2013) 
+            </a>
+            (included video-recordings of the lectures – also on Youtube: 
+            <a class="links" href="https://www.youtube.com/playlist?list=PLPQ9mGt4tRsarG2Lt50mXFvWPs56v6gRr">
+                https://goo.gl/jY4qVk
+            </a>
+            )
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index12f.html">
+                Fall 2012
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index11f.html">
+                Fall 2011
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index10f.html">
+                Fall 2010
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index09f.html">
+                Fall 2009
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index08f.html">
+                Fall 2008
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index07f.html">
+                Fall 2007
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index06f.html">
+                Fall 2006
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index05f.html">
+                Fall 2005
+            </a>
+            (taught using the "simple processor datapath" in Labs 11 and 12).
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index04f.html">
+                Fall 2004
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index03f.html">
+                Fall 2003
+            </a>,
+            <a class="links" href="https://www.csd.uoc.gr/~hy120/index02f.html">
+                Fall 2002
+            </a>
+            (taught by M. Katevenis).
+        </h3>
+
+        <h3 class="paragraph swiftright">
+            &bull;
+            F'01
+            [<a class="links" href="https://www.csd.uoc.gr/~hy120/01f/index.html">
+                HTML
+            </a>]
+            , F'00 project
+            [<a class="links" href="https://www.csd.uoc.gr/~hy120/01f/Project2000.doc">
+                DOC
+            </a>]
+            , F'99 project
+            [<a class="links" href="https://www.csd.uoc.gr/~hy120/01f/Project1999.doc">
+                DOC
+            </a>].
+        </h3>
+    </section>
+
+    <section id="END">
+        <footer>
+            <p>Ευχαριστούμε θερμά την εταιρεία 
+                <a class="links" href="https://www.intel.com/content/www/us/en/products/programmable.html">
+                    Altera
+                </a>
+                (<a class="links" href="https://www.intel.com/content/www/us/en/products/programmable.html">
+                    University Program
+                </a>)
+                γιά τη δωρεά υλικών αξίας 10 χιλιάδων Ευρώ προς το εργαστήριο του μαθήματος.
+            </p>
+
+            <p>We deeply appreciate
+                <a class="links" href="https://www.intel.com/content/www/us/en/products/programmable.html">
+                    Altera
+                </a>
+                <a class="links" href="https://www.intel.com/content/www/us/en/products/programmable.html">
+                    University Program
+                </a>
+                's donation of 10 thousand Euro worth of hardware to this course's lab.
+                <div id="altera"></div>
+            </p>
+            <p>
+                <a class="links" href="https://www.csd.uoc.gr/~hy120/23f/copyright.html">
+                    © copyright
+                </a>
+                University of Crete, Greece. Last updated: 5 Jan. 2024 by
+                <a class="links" href="https://users.ics.forth.gr/~kateveni/">
+                    M. Katevenis.
+                </a>
+            </p>
+        </footer>
+    </section>
+
+    
+</body>
+</html>

@@ -1,0 +1,144 @@
+body{
+    background-color: rgb(195, 190, 182);
+}
+
+.departmentURL{
+    color: rgb(82, 79, 74);
+    font-size: 23px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.departmentURL:hover{
+    font-size: 28px;
+}
+
+
+.introductionDiv{
+    margin-top: -30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.links{
+    color: rgb(39, 120, 120);
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(82, 107, 131);
+    transition: 0.3s;
+    
+}
+
+
+#navbar {
+    margin-left: -10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    background-color: #333;
+    height: 55px;
+    margin-top: -20px;
+    padding-bottom: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 27px;
+}
+
+#navbar a:hover {
+    color: rgb(186, 177, 177);
+}
+
+section {
+  padding: 20px 20px;
+  margin-top: 50px;
+}
+
+
+.num {
+    align-self:center;
+    font-size: 30px; /* Adjust the font size as needed */
+}
+
+
+.RedHilight{
+    color: rgb(208, 68, 68);
+}
+
+.middot{
+    font-size: 60px;
+    
+}
+
+.middotdiv{
+    height: 25px;
+    margin-left: -8px;
+}
+
+.paragraph{
+    color: rgb(54, 50, 50);
+}
+
+.swiftright{
+    margin-left: 30px;
+}
+
+
+.darkhilight{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.hilight{
+    color: black;
+    font-size: 21px;
+}
+
+#UP{
+    margin-left: 480px;
+    margin-bottom: -28px;
+    width: 40px;
+    height: 30px; 
+    background: url('../images/upload.png') no-repeat center center; /* Replace 'path/to/your/icon.png' with the actual path */
+    background-size: cover;
+}
+
+#Down{
+    margin-left: 990px;
+    margin-top: -35px;
+    width: 60px;
+    height: 40px; 
+    background: url('../images/down-arrow.png') no-repeat center center; /* Replace 'path/to/your/icon.png' with the actual path */
+    background-size: cover;
+}
+
+footer {
+    background-color: #333;
+    color: #e1dcdc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer p{
+    font-size: 18px;
+  }
+
+  #altera{
+    margin-left:1300px;
+    margin-top: -50px;
+    width: 140px;
+    height: 40px; 
+    background: url('../images/altera.jpg') no-repeat center center; /* Replace 'path/to/your/icon.png' with the actual path */
+    background-size: cover;
+  }
