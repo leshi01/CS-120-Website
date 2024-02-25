@@ -1,1 +1,1 @@
-To run this website just open the html file and run the index.html
+To run this website just open the CS-120/html folder and run the index.html
